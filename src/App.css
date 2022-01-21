@@ -1,0 +1,102 @@
+/* App */
+.App {
+  width: 98%;
+  margin: 0 auto;
+  background-color: rgb(2, 9, 34);
+  color: rgb(255, 255, 255);
+}
+.common-mt {
+  margin-top: 10%;
+  padding: 0px 5%;
+}
+
+.fPDpuU {
+}
+
+.banner {
+  width: 100%;
+}
+.lcUbOd {
+  background-color: rgb(32 249 225 / 50%) !important;
+  box-shadow: 0 0 1px 3px rgb(32 249 225 / 50%) !important;
+}
+.eaptOe {
+  background-color: transparent;
+
+  /* border: 1px solid rgb(32 249 225 / 50%) !important; */
+  box-shadow: 0 0 1px 2px rgb(32 249 225 / 50%) !important;
+}
+.banner img {
+  object-fit: cover;
+  height: 70vh;
+  width: 100%;
+}
+.shape-main {
+  display: flex;
+  margin-left: 30%;
+}
+.shape-main img {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  /* border: 1px solid white; */
+}
+.shape-main p {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+  border: 1px solid white;
+  height: 150px;
+  width: 150px;
+  /* margin-top: -23%; */
+}
+.shape-main {
+  display: flex;
+}
+.shape-left {
+  /* border: 1px solid red; */
+  align-self: center;
+}
+.shape-right {
+  display: flex;
+  flex-direction: column;
+}
+.shape-right img {
+  /* padding: 20px; */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* service-main */
+
+.service-main {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+/* Innovationleft */
+
+.Innovationleft {
+  display: flex;
+}
+.InnovationRight {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -5%;
+}
+.shape-left.InnovationRight.Present {
+  margin-top: 50%;
+}
+
+/* about */
+.option p {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(39, 39, 39);
+  padding: 15px;
+  border-radius: 10px;
+}
+.option p:hover {
+  background-color: rgb(65, 63, 63);
+}
