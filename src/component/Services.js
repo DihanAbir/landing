@@ -23,7 +23,7 @@ function Services() {
         </Grid>
         <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="grid">
           <div className="shape-main">
-            <div className="shape-left">
+            <div className="shape-left" style={{ padding: "10%" }}>
               <img style={{ width: "100%", height: "100%" }} src={image1} />
             </div>
           </div>

@@ -11,9 +11,16 @@ import image2022q2 from "../assets/2022q2.png";
 import image2022q2h from "../assets/2021q2h.png";
 
 import image2022q3 from "../assets/2022q3.png";
+import image2022q3h from "../assets/2021q3h.png";
+
 import image2022q4 from "../assets/2022q4.png";
+import image2022q4h from "../assets/2022Q4h.png";
+
 import image2023 from "../assets/2023.png";
+import image2023h from "../assets/2023h.png";
+
 import image2024 from "../assets/2024.png";
+import image2024h from "../assets/2024h.png";
 
 const journeyData = [
   {
@@ -116,11 +123,11 @@ function Journey() {
                 <img
                   onClick={() => {
                     setDetails(0);
-                    setImageS(image2022q2);
+                    setImageS(image2021);
                   }}
                   style={{ width: "100%", height: "100%" }}
-                  // src={imageS === image2021 ? image2021h : image2021}
-                  src={image2022q2}
+                  src={imageS === image2021 ? image2021h : image2021}
+                  // src={image2021}
                 />
               </div>
             </div>
@@ -134,23 +141,23 @@ function Journey() {
                 <div className="shape-left InnovationRight InnovationRight1 InnovationRight1">
                   <img
                     onClick={() => {
-                      setDetails(1);
+                      setDetails(2);
                       setImageS(image2022q2);
                     }}
                     style={{ width: "50%", height: "50%" }}
                     src={image2022q2}
-                    // src={imageS === image2022q1 ? image2022q1h : image2022q1}
+                    src={imageS === image2022q2 ? image2022q2h : image2022q2}
                   />
                 </div>
                 <br />
                 <div className="Innovationleft Innovationleft1 shape-left">
                   <img
                     onClick={() => {
-                      setDetails(2);
-                      setImageS(image2022q2);
+                      setDetails(1);
+                      setImageS(image2022q1);
                     }}
                     style={{ width: "50%", height: "50%" }}
-                    src={imageS === image2022q2 ? image2022q2h : image2022q2}
+                    src={imageS === image2022q1 ? image2022q1h : image2022q1}
                   />
                 </div>
               </div>
@@ -161,22 +168,25 @@ function Journey() {
                 <div className="shape-left InnovationRight InnovationRight2 InnovationRight1">
                   <img
                     onClick={() => {
-                      setDetails(3);
-                      setImageS(image2022q2);
+                      setDetails(4);
+                      setImageS(image2022q4);
                     }}
                     style={{ width: "50%", height: "50%" }}
-                    src={image2022q3}
+                    // src={image2022q3}
+
+                    src={imageS === image2022q4 ? image2022q4h : image2022q4}
                   />
                 </div>
                 <br />
                 <div className="Innovationleft Innovationleft2 shape-left">
                   <img
                     onClick={() => {
-                      setDetails(4);
-                      setImageS(image2022q2);
+                      setDetails(3);
+                      setImageS(image2022q3);
                     }}
                     style={{ width: "50%", height: "50%" }}
-                    src={image2022q4}
+                    // src={image2022q4}
+                    src={imageS === image2022q3 ? image2022q3h : image2022q3}
                   />
                 </div>
               </div>
@@ -189,9 +199,11 @@ function Journey() {
                   style={{ width: "50%", height: "50%" }}
                   onClick={() => {
                     setDetails(5);
-                    setImageS(image2022q2);
+                    setImageS(image2023);
                   }}
-                  src={image2023}
+                  // src={image2023}
+
+                  src={imageS === image2023 ? image2023h : image2023}
                 />
               </div>
               <br />
@@ -199,10 +211,12 @@ function Journey() {
                 <img
                   onClick={() => {
                     setDetails(6);
-                    setImageS(image2022q2);
+                    setImageS(image2024);
                   }}
                   style={{ width: "50%", height: "50%" }}
-                  src={image2024}
+                  // src={image2024}
+
+                  src={imageS === image2024 ? image2024h : image2024}
                 />
               </div>
             </div>

@@ -60,7 +60,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="menu menu-lg">
+        <div className="sm-menu menu menu-lg">
           <p onClick={() => setToggle(!toggle)}>
             {toggle ? (
               <MenuOpenIcon style={{ fontSize: "3rem", marginLeft: "-60%" }} />
