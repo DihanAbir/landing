@@ -1,4 +1,5 @@
-import logo from "./logo.svg";
+import { SmoothProvider } from "react-smooth-scrolling";
+
 import "./App.css";
 import Layout from "./component/Layout";
 import Banner from "./component/Banner";
@@ -14,7 +15,6 @@ function App() {
       <Layout>
         <Banner />
         <Inspiration />
-
         <Services />
         <Innovation />
         <Journey />

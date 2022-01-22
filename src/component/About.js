@@ -7,35 +7,35 @@ let image2 = `https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib
 
 let image3 = `https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80`;
 
-const inspirationData = [
+const aboutData = [
   {
-    title: "Inspiration 1",
+    title: "About 1",
     options: [
-      " Inspiration 1 option 1",
-      " Inspiration 1 option 2",
-      " Inspiration 1 option 3",
-      " Inspiration 1 option 4",
+      " About 1 option 1",
+      " About 1 option 2",
+      " About 1 option 3",
+      " About 1 option 4",
       "option 5",
     ],
   },
   {
-    title: "Inspiration 2",
+    title: "About 2",
     options: [
-      " Inspiration 2 option 1",
-      " Inspiration 2 option 2",
-      " Inspiration 2 option 3",
-      " Inspiration 2 option 4",
-      " Inspiration 2 option 5",
+      " About 2 option 1",
+      " About 2 option 2",
+      " About 2 option 3",
+      " About 2 option 4",
+      " About 2 option 5",
     ],
   },
   {
-    title: "Inspiration 3",
+    title: "About 3",
     options: [
-      "Inspiration 3 option 1",
-      "Inspiration 3 option 2",
-      "Inspiration 3 option 3",
-      "Inspiration 3 option 4",
-      "Inspiration 3 option 5",
+      "About 3 option 1",
+      "About 3 option 2",
+      "About 3 option 3",
+      "About 3 option 4",
+      "About 3 option 5",
     ],
   },
 ];
@@ -46,10 +46,10 @@ function About() {
   console.log("details", details);
 
   return (
-    <div className="common-mt">
+    <div id="about" className="common-mt">
+      <h1>About</h1>
       <Grid container spacing={2}>
         <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
-          <h1>About</h1>
           <div className="shape-main">
             <div className="shape-left">
               <img
@@ -86,10 +86,9 @@ function About() {
             display: "flex",
             justifyContent: "center",
             alignContent: "center",
-            /* height: 100%; */
-            /* background: red; */
             alignItems: "center",
           }}
+          className="grid"
         >
           <InspirationDetails details={details} />
         </Grid>
@@ -99,12 +98,14 @@ function About() {
 }
 
 function InspirationDetails({ details }) {
-  const { title, options } = inspirationData[details];
+  const { title, options } = aboutData[details];
   return (
     <div className="option">
-      <p>Create section for text to be put in here.</p>
-      <p>Text about Forevernow</p>
-      <p>Select image text changes to TEAM</p>
+      <h2>{title}</h2>
+      {options.map((option, index) => (
+        <p key={index}>{option}</p>
+      ))}
+      <br />
     </div>
   );
 }

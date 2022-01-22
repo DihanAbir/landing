@@ -15,12 +15,13 @@ const details = {
 };
 function Services() {
   return (
-    <div className="common-mt">
+    <div id="services" className="common-mt">
+      <h1>Service</h1>
       <Grid container spacing={2}>
-        <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
+        <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="grid">
           <ServicesDetails details={details} />
         </Grid>
-        <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
+        <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="grid">
           <div className="shape-main">
             <div className="shape-left">
               <img style={{ width: "100%", height: "100%" }} src={image1} />
@@ -36,7 +37,6 @@ function ServicesDetails({ details }) {
   const { title, options } = details;
   return (
     <div className=" option service-main">
-      <h1>Services</h1>
       <h3>{title}</h3>
       {options.map((option, index) => (
         <p key={index}>{option}</p>

@@ -44,11 +44,11 @@ function Inspiration() {
   console.log("details", details);
 
   return (
-    <div className="common-mt">
+    <div id="concept" className="common-mt">
       <Grid container spacing={2}>
         <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
           <h1 style={{ textAlign: "left" }}>Inspiration</h1>
-          <div className="shape-main">
+          <div className="inspiration-padding shape-main">
             <div className="shape-left">
               <img
                 onClick={() => setDetails(0)}
@@ -72,7 +72,7 @@ function Inspiration() {
             </div>
           </div>
         </Grid>
-        <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
+        <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="grid">
           <InspirationDetails details={details} />
         </Grid>
       </Grid>
