@@ -2,7 +2,7 @@
 .App {
   width: 100%;
   /* margin: 0 auto; */
-  background-color: rgb(2, 9, 34);
+  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
 
@@ -22,8 +22,29 @@ html {
   color: rgb(47, 77, 243) !important;
 }
 .common-mt {
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   padding: 0px 5%;
+}
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  background-color: rgb(26 26 26 / 80%) !important;
+}
+.cross {
+  position: absolute;
+  top: -10;
+  right: 0;
+  top: -10%;
+  transform: translate(50%, 0%);
+  background: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+.cross:hover {
+  background: rgb(173, 172, 172);
+}
+.css-ghpphw {
+  background-color: rgba(255, 255, 255, 0) !important;
 }
 
 /* Top */
@@ -80,6 +101,19 @@ html {
   border: 1px solid rgb(32 249 225 / 50%) !important;
   box-shadow: 0 0 1px 3px rgb(32 249 225 / 50%) !important;
 }
+
+button.rec-dot {
+  border: 1px solid rgb(32 249 225 / 50%) !important;
+  box-shadow: 0 0 1px 3px rgb(32 249 225 / 50%) !important;
+}
+
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus {
+  border: 1px solid rgb(32 249 225 / 50%) !important;
+  box-shadow: 0 0 1px 3px rgb(32 249 225 / 50%) !important;
+}
+
 .eaptOe {
   background-color: transparent;
 
@@ -154,8 +188,8 @@ html {
 
 /* about */
 .option {
-  border: 1px solid rgba(1, 44, 39, 0.5) !important;
-  background-color: rgba(18, 13, 59, 0.5) !important;
+  /* border: 1px solid rgba(1, 44, 39, 0.5) !important; */
+  background-color: rgb(0, 0, 0) !important;
   padding: 0px 50px;
   border-radius: 10px;
 }
@@ -164,18 +198,27 @@ html {
   font-size: 1.2em;
   font-weight: 400;
   font-family: "Courier New", Courier, monospace;
-  background-color: rgb(3, 2, 37);
+  background-color: rgb(0, 0, 0);
   padding: 15px;
   border-radius: 10px;
 }
 .option p:hover {
-  background-color: rgb(14, 14, 73);
+  background-color: rgb(0, 0, 0);
+}
+.Inspiration-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid {
   display: flex;
   align-self: center;
   justify-content: center;
+}
+.sectionTitle {
+  color: aqua;
+  margin-left: 100px;
 }
 
 /* intro */
@@ -195,6 +238,36 @@ span.skip {
   text-transform: capitalize;
   cursor: pointer;
 }
+.inspirationShape img {
+  width: 350px;
+  height: 300px;
+}
+.bg-shape img {
+  width: 500px !important;
+  height: 400px !important;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+}
+.footer span {
+  margin: 0px 5%;
+}
+.footer span:nth-child(1):hover {
+  color: rgb(39, 84, 207);
+}
+
+.footer span:nth-child(2):hover {
+  color: #5120d6;
+}
+
+.footer span:nth-child(3):hover {
+  color: rgb(106, 143, 243);
+}
+
+.footer span:nth-child(4):hover {
+  color: rgb(7, 45, 151);
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -202,6 +275,79 @@ span.skip {
     right: 23px;
     top: 13px;
     font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .inspirationMain {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .inspirationShape img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .inspirationMain {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-shape img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  span.skip {
+    right: 23px;
+    top: 13px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .inspirationShape img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .bg-shape img {
+    width: 500px !important;
+    height: 400px !important;
+  }
+  span.skip {
+    right: 23px;
+    top: 13px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  span.skip {
+    right: 23px;
+    top: 13px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  span.skip {
+    right: 23px;
+    top: 13px;
+    font-size: 18px;
+  }
+  .inspirationMain {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .inspirationShape img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .bg-shape img {
+    width: 200px !important;
+    height: 200px !important;
   }
 }
 @media (max-width: 575.98px) {
@@ -212,7 +358,7 @@ span.skip {
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1024px) {
   .lg-menu {
     display: none;
   }
@@ -245,4 +391,8 @@ span.skip {
     -webkit-text-fill-color: transparent;
     cursor: pointer;
   }
+}
+
+h1 {
+  font-size: 3rem;
 }

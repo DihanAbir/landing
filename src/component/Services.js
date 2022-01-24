@@ -6,17 +6,13 @@ import image1 from "../assets/Scrollimage1.jpg";
 const details = {
   title: "Inspiration 1",
   options: [
-    "It to make a type specimen book",
-    "There are many variations of passages of Lorem Ipsum available,",
-    "Contrary to popular belief",
-    "Below for those interested. Sections 1.10.32",
-    "Where can I get some?",
+    "It to make a type specimen book uisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati",
   ],
 };
 function Services() {
   return (
     <div id="services" className="common-mt">
-      <h1>Service</h1>
+      <h1 className="sectionTitle">Our Service</h1>
       <Grid container spacing={2}>
         <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="grid">
           <ServicesDetails details={details} />
@@ -37,7 +33,6 @@ function ServicesDetails({ details }) {
   const { title, options } = details;
   return (
     <div className=" option service-main">
-      <h3>{title}</h3>
       {options.map((option, index) => (
         <p key={index}>{option}</p>
       ))}

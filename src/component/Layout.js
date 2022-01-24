@@ -15,7 +15,6 @@ function Layout({ children }) {
           <NavigationIcon style={{ fontSize: "50px" }} />
         </p>
       </Link>
-      {/* <Footer /> */}
     </div>
   );
 }

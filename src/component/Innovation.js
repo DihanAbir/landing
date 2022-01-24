@@ -19,21 +19,13 @@ const inspirationData = [
   {
     title: "Innovation 1",
     options: [
-      " Innovation 1 option 1",
-      " Innovation 1 option 2",
-      " Innovation 1 option 3",
-      " Innovation 1 option 4",
-      "option 5",
+      " anditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum u",
     ],
   },
   {
     title: "Innovation 2",
     options: [
-      " Innovation 2 option 1",
-      " Innovation 2 option 2",
-      " Innovation 2 option 3",
-      " Innovation 2 option 4",
-      " Innovation 2 option 5",
+      " Innovation 2 option 1 uisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati ",
     ],
   },
 ];
@@ -43,7 +35,9 @@ function Innovation() {
   console.log("details", details);
   return (
     <div id="innovation" className="common-mt">
-      <h1 style={{ margin: "20px" }}>Innovation</h1>
+      <h1 className="sectionTitle" style={{ margin: "20px" }}>
+        Innovation
+      </h1>
       <Grid container spacing={2}>
         <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="grid">
           <InnovationDetails details={details} />
@@ -75,7 +69,6 @@ function InnovationDetails({ details }) {
   const { title, options } = inspirationData[details];
   return (
     <div className=" option service-main">
-      <h3>{title}</h3>
       {options.map((option, index) => (
         <p key={index}>{option}</p>
       ))}

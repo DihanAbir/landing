@@ -2,13 +2,35 @@ import { Grid } from "@mui/material";
 import React, { useEffect } from "react";
 
 import image2021 from "../assets/2021.png";
+// import image2021h from "../assets/2021.png";
+
+// import image2022q1 from "../assets/2021.png";
+// import image2022q1h from "../assets/2021.png";
+
+// import image2022q2 from "../assets/2021.png";
+// import image2022q2h from "../assets/2021.png";
+
+// import image2022q3 from "../assets/2021.png";
+// import image2022q3h from "../assets/2021.png";
+
+// import image2022q4 from "../assets/2021.png";
+// import image2022q4h from "../assets/2021.png";
+
+// import image2023 from "../assets/2021.png";
+// import image2023h from "../assets/2021.png";
+
+// import image2024 from "../assets/2021.png";
+// import image2024h from "../assets/2021.png";
+
+// original image Url
+
 import image2021h from "../assets/2021h.png";
 
 import image2022q1 from "../assets/2022Q1.png";
 import image2022q1h from "../assets/2022Q1h.png";
 
-import image2022q2 from "../assets/2022q2.png";
-import image2022q2h from "../assets/2021q2h.png";
+import image2022q2 from "../assets/2022q222 - Copy.png";
+import image2022q2h from "../assets/2022q222.png";
 
 import image2022q3 from "../assets/2022q3.png";
 import image2022q3h from "../assets/2021q3h.png";
@@ -26,71 +48,43 @@ const journeyData = [
   {
     title: "Journey 2021",
     options: [
-      " Journey 1 option 1",
-      " Journey 1 option 2",
-      " Journey 1 option 3",
-      " Journey 1 option 4",
-      "option 5",
+      " Journey 1 option 1uisat iusto fuga praesentium optio, eaque rerum! Provident similique accu quam eius sed odit fugisantium nemo autem. Veritatis obcaecati",
     ],
   },
   {
     title: "Journey 2022 Q1",
     options: [
-      " Journey 2 option 1",
-      " Journey 2 option 2",
-      " Journey 2 option 3",
-      " Journey 2 option 4",
-      " Journey 2 option 5",
+      " Journey erum! Provident similique accusantium nemo autem. Veritatis obcaecati 2 option 1 uisquam eius sed odit fugiat iusto fuga praesentium optio, eaque r",
     ],
   },
   {
     title: "Journey 2022 Q2",
     options: [
-      "Journey q2 option 1",
-      "Journey 3 option 2",
-      "Journey 3 option 3",
-      "Journey 3 option 4",
-      "Journey 3 option 5",
+      "Jourus sed odit fugiat iusto fuga praesentium opt ney q2 option 1 uisquam ei io, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati",
     ],
   },
   {
     title: "Journey 2022 Q3",
     options: [
-      " Journey 1s option 1",
-      " Journey 1 option 2",
-      " Journey 1 option 3",
-      " Journey 1 option 4",
-      "option 5",
+      " Journey  praesentium optio, eaque rerum! Provident 1s option 1 uisquam eius sed odit fugiat iusto fuga similique accusantium nemo autem. Veritatis obcaecati",
     ],
   },
   {
     title: "Journey 2022 Q4",
     options: [
-      " Journey 2 option 1",
-      " Journey 2 option 2",
-      " Journey 2 option 3",
-      " Journey 2 option 4",
-      " Journey 2 option 5",
+      " Journey 2 option 1 uism optio, eaque rerum! Provident similique accusantium quam eius sed odit fugiat iusto fuga praesentiu nemo autem. Veritatis obcaecati",
     ],
   },
   {
     title: "Journey 2023",
     options: [
-      "Journey 3 option 1",
-      "Journey 3 option 2",
-      "Journey 3 option 3",
-      "Journey 3 option 4",
-      "Journey 3 option 5",
+      "Journey 3 om optio, eaque rerum! Provident similique accusantium nemo au ption 1 uisquam eius sed odit fugiat iusto fuga praesentiu tem. Veritatis obcaecati",
     ],
   },
   {
     title: "Journey 2024",
     options: [
-      "Journey 3 option 152",
-      "Journey 3 option werw",
-      "Journey 3234 option 3",
-      "Journey 323 option 4",
-      "Journey 3 option 5",
+      "Journey 3 option 15uimilique accusantium nemo autem. Veritatis obcaecati 2 squam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati",
     ],
   },
 ];
@@ -107,7 +101,7 @@ function Journey() {
         textAlign: "center",
       }}
     >
-      <h1>Journey</h1>
+      <h1 className="sectionTitle">Our Journey</h1>
       <div className="journeyShape">
         <Grid container spacing={2}>
           {/* xl={2} ls={6} md={6} sm={12} xs={12} */}
@@ -134,62 +128,76 @@ function Journey() {
           </Grid>
           <Grid item xs={6}>
             <div style={{ display: "flex", marginTop: "20%" }}>
-              <div
-                style={{ display: "inline", marginLeft: "0%" }}
-                className="shape-main"
-              >
-                <div className="shape-left InnovationRight InnovationRight1 InnovationRight1">
-                  <img
-                    onClick={() => {
-                      setDetails(2);
-                      setImageS(image2022q2);
-                    }}
-                    style={{ width: "50%", height: "50%" }}
-                    src={image2022q2}
-                    src={imageS === image2022q2 ? image2022q2h : image2022q2}
-                  />
-                </div>
-                <br />
-                <div className="Innovationleft Innovationleft1 shape-left">
-                  <img
-                    onClick={() => {
-                      setDetails(1);
-                      setImageS(image2022q1);
-                    }}
-                    style={{ width: "50%", height: "50%" }}
-                    src={imageS === image2022q1 ? image2022q1h : image2022q1}
-                  />
-                </div>
-              </div>
-              <div
-                style={{ display: "inline", marginLeft: "0%" }}
-                className="shape-main"
-              >
-                <div className="shape-left InnovationRight InnovationRight2 InnovationRight1">
-                  <img
-                    onClick={() => {
-                      setDetails(4);
-                      setImageS(image2022q4);
-                    }}
-                    style={{ width: "50%", height: "50%" }}
-                    // src={image2022q3}
+              <Grid container>
+                <Grid item xs={6}>
+                  <div
+                    style={{ display: "inline", marginLeft: "0%" }}
+                    className="shape-main"
+                  >
+                    <div className="shape-left InnovationRight InnovationRight1 InnovationRight1">
+                      <img
+                        onClick={() => {
+                          setDetails(2);
+                          setImageS(image2022q2);
+                        }}
+                        style={{ width: "50%", height: "50%" }}
+                        src={image2022q2}
+                        src={
+                          imageS === image2022q2 ? image2022q2h : image2022q2
+                        }
+                      />
+                    </div>
+                    <br />
+                    <div className="Innovationleft Innovationleft1 shape-left">
+                      <img
+                        onClick={() => {
+                          setDetails(1);
+                          setImageS(image2022q1);
+                        }}
+                        style={{ width: "50%", height: "50%" }}
+                        src={
+                          imageS === image2022q1 ? image2022q1h : image2022q1
+                        }
+                      />
+                    </div>
+                  </div>
+                </Grid>
+                <Grid item xs={6}>
+                  <div
+                    style={{ display: "inline", marginLeft: "0%" }}
+                    className="shape-main"
+                  >
+                    <div className="shape-left InnovationRight InnovationRight2 InnovationRight1">
+                      <img
+                        onClick={() => {
+                          setDetails(4);
+                          setImageS(image2022q4);
+                        }}
+                        style={{ width: "50%", height: "50%" }}
+                        // src={image2022q3}
 
-                    src={imageS === image2022q4 ? image2022q4h : image2022q4}
-                  />
-                </div>
-                <br />
-                <div className="Innovationleft Innovationleft2 shape-left">
-                  <img
-                    onClick={() => {
-                      setDetails(3);
-                      setImageS(image2022q3);
-                    }}
-                    style={{ width: "50%", height: "50%" }}
-                    // src={image2022q4}
-                    src={imageS === image2022q3 ? image2022q3h : image2022q3}
-                  />
-                </div>
-              </div>
+                        src={
+                          imageS === image2022q4 ? image2022q4h : image2022q4
+                        }
+                      />
+                    </div>
+                    <br />
+                    <div className="Innovationleft Innovationleft2 shape-left">
+                      <img
+                        onClick={() => {
+                          setDetails(3);
+                          setImageS(image2022q3);
+                        }}
+                        style={{ width: "50%", height: "50%" }}
+                        // src={image2022q4}
+                        src={
+                          imageS === image2022q3 ? image2022q3h : image2022q3
+                        }
+                      />
+                    </div>
+                  </div>
+                </Grid>
+              </Grid>
             </div>
           </Grid>
           <Grid item xs={4}>
@@ -231,7 +239,7 @@ function Journey() {
 function AddressDetails({ details }) {
   const { title, options } = journeyData[details];
   return (
-    <div className="option details">
+    <div style={{ marginTop: "5%" }} className="option details">
       <h2>{title}</h2>
       {options.map((option, index) => (
         <p key={index}>{option}</p>

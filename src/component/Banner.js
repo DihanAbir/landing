@@ -64,7 +64,9 @@ function Item({ detils }) {
   return (
     <div className="banner">
       <img src={detils.url} alt={detils.url} />
-      {/* <p style={{ fontSize: "18px", padding: "0px 10px" }}>{detils.title}</p> */}
+      <p style={{ fontSize: "18px", padding: "0px 10px", textAlign: "right" }}>
+        {detils.title}
+      </p>
     </div>
   );
 }

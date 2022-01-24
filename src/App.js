@@ -11,6 +11,8 @@ import About from "./component/About";
 import { useEffect, useState } from "react";
 
 import introVideo from "./assets/Web-Intro.mp4";
+import videoModal from "./component/VideoModal";
+import Footer from "./component/Footer";
 
 function App() {
   const [intro, setIntro] = useState(true);
@@ -26,22 +28,40 @@ function App() {
   });
 
   return (
-    <div>
-      {intro ? (
-        <IntroVideo removeIntros={removeIntro} />
-      ) : (
-        <div className="App">
-          <Layout>
-            <Banner />
-            <Inspiration />
-            <Services />
-            <Innovation />
-            <Journey />
-            <About />
-          </Layout>
-        </div>
-      )}
+    <div className="App">
+      <Layout>
+        <Banner />
+        <hr />
+        <Inspiration />
+        <hr />
+        <Services />
+        <hr />
+        <Innovation />
+        <hr />
+        <Journey />
+        <hr />
+        <About />
+
+        <Footer />
+      </Layout>
     </div>
+
+    // <div>
+    //   {intro ? (
+    //     <IntroVideo removeIntros={removeIntro} />
+    //   ) : (
+    //     <div className="App">
+    //       <Layout>
+    //         <Banner />
+    //         <Inspiration />
+    //         <Services />
+    //         <Innovation />
+    //         <Journey />
+    //         <About />
+    //       </Layout>
+    //     </div>
+    //   )}
+    // </div>
   );
 }
 

@@ -10,33 +10,15 @@ let image3 = `https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib
 const aboutData = [
   {
     title: "About 1",
-    options: [
-      " About 1 option 1",
-      " About 1 option 2",
-      " About 1 option 3",
-      " About 1 option 4",
-      "option 5",
-    ],
+    options: ["The Company’ and change text header to read About Forevernow"],
   },
   {
     title: "About 2",
-    options: [
-      " About 2 option 1",
-      " About 2 option 2",
-      " About 2 option 3",
-      " About 2 option 4",
-      " About 2 option 5",
-    ],
+    options: ["The Team’ and change text header to read Forevernow Team"],
   },
   {
     title: "About 3",
-    options: [
-      "About 3 option 1",
-      "About 3 option 2",
-      "About 3 option 3",
-      "About 3 option 4",
-      "About 3 option 5",
-    ],
+    options: ["Contact Us’ and change text header to read Contact Us"],
   },
 ];
 
@@ -47,28 +29,33 @@ function About() {
 
   return (
     <div id="about" className="common-mt">
-      <h1>About</h1>
       <Grid container spacing={2}>
-        <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
+        <Grid
+          className="inspirationMain"
+          item
+          xl={6}
+          ls={6}
+          md={6}
+          sm={12}
+          xs={12}
+        >
+          <h1 className="sectionTitle">About</h1>
           <div className="shape-main">
-            <div className="shape-left">
-              <img
-                onClick={() => setDetails(0)}
-                style={{ width: "100%", height: "200px" }}
-                src={image1}
-              />
+            <div className="inspirationShape bg shape-left">
+              <img onMouseEnter={() => setDetails(0)} src={image1} />
             </div>
-            <div className="shape-right">
+            <div className="inspirationShape shape-right">
               <img
-                onClick={() => setDetails(1)}
-                style={{ width: "200px", height: "200px" }}
+                onMouseEnter={() => setDetails(1)}
+                // style={{ width: "300px", height: "300px" }}
                 src={image2}
               />
               <br />
               <br />
+              <br />
               <img
-                onClick={() => setDetails(2)}
-                style={{ width: "200px", height: "200px" }}
+                onMouseEnter={() => setDetails(2)}
+                // style={{ width: "300px", height: "300px" }}
                 src={image3}
               />
             </div>
@@ -101,7 +88,7 @@ function InspirationDetails({ details }) {
   const { title, options } = aboutData[details];
   return (
     <div className="option">
-      <h2>{title}</h2>
+      {" "}
       {options.map((option, index) => (
         <p key={index}>{option}</p>
       ))}
