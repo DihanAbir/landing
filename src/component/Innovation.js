@@ -35,11 +35,8 @@ function Innovation() {
   console.log("details", details);
   return (
     <div id="innovation" className="common-mt">
-      <h1 className="sectionTitle" style={{ margin: "20px" }}>
-        Innovation
-      </h1>
       <Grid container spacing={2}>
-        <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="grid">
+        <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="">
           <InnovationDetails details={details} />
         </Grid>
         <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
@@ -51,7 +48,7 @@ function Innovation() {
                 src={image1}
               />
             </div>
-            <br />
+
             <div
               onClick={() => setDetails(1)}
               className="shape-left InnovationRight"
@@ -68,9 +65,12 @@ function Innovation() {
 function InnovationDetails({ details }) {
   const { title, options } = inspirationData[details];
   return (
-    <div className=" option service-main">
+    <div className=" option service-main grid">
       {options.map((option, index) => (
-        <p key={index}>{option}</p>
+        <div>
+          <h1 className="sectionTitle">Innovation</h1>
+          <p key={index}>{option}</p>
+        </div>
       ))}
       <br />
     </div>

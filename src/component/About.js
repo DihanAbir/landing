@@ -41,7 +41,7 @@ function About() {
         >
           <h1 className="sectionTitle">About</h1>
           <div className="shape-main">
-            <div className="inspirationShape bg shape-left">
+            <div className="inspirationShape bg-shape shape-left">
               <img onMouseEnter={() => setDetails(0)} src={image1} />
             </div>
             <div className="inspirationShape shape-right">

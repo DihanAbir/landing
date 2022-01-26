@@ -1,6 +1,7 @@
 import { Link } from "@mui/material";
 import React, { useEffect } from "react";
-import logo from "../assets/logo.jpg";
+// import logo from "../assets/logo.jpg";
+import logo from "../assets/Business Card-02.jpg";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
@@ -20,7 +21,7 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="logo">
-          <img style={{ height: "95px", width: "90%" }} src={logo} />
+          <img style={{ height: "95px", width: "100%" }} src={logo} />
         </div>
         <Link className="link">
           <BasicModal />
@@ -46,7 +47,7 @@ function Navbar() {
             </li>
             <li>
               <Link className="link" href="#concept">
-                Concept
+                Vision
               </Link>
             </li>
             <li>

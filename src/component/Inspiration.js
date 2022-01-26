@@ -32,7 +32,7 @@ function Inspiration() {
   console.log("details", details);
 
   return (
-    <div id="concept" className="common-mt">
+    <div id="concept" className="common-mt inspiratio">
       <Grid container spacing={2}>
         <Grid
           className="inspirationMain"
@@ -43,9 +43,6 @@ function Inspiration() {
           sm={12}
           xs={12}
         >
-          <h1 className="sectionTitle" style={{ textAlign: "left" }}>
-            Our Inspiration
-          </h1>
           <div className="inspiration-padding Inspiration-main shape-main">
             <div className="inspirationShape shape-left">
               <img
@@ -61,8 +58,6 @@ function Inspiration() {
                 src={image2}
               />
               <br />
-              <br />
-              <br />
               <img
                 onClick={() => setDetails(2)}
                 // style={{ width: "300px", height: "300px" }}
@@ -71,7 +66,13 @@ function Inspiration() {
             </div>
           </div>
         </Grid>
-        <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="grid">
+        <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
+          <h1
+            className="inspirationheader sectionTitle"
+            style={{ textAlign: "left" }}
+          >
+            Our Inspiration
+          </h1>
           <InspirationDetails details={details} />
         </Grid>
       </Grid>
@@ -82,7 +83,7 @@ function Inspiration() {
 function InspirationDetails({ details }) {
   const { title, options } = inspirationData[details];
   return (
-    <div className="option" style={{ textAlignLast: "center" }}>
+    <div className="option grid" style={{ textAlignLast: "center" }}>
       {options.map((option, index) => (
         <p key={index}>{option}</p>
       ))}

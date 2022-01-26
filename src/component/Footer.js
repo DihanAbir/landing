@@ -12,7 +12,7 @@ function Footer() {
   console.log("details", details);
 
   return (
-    <div id="about">
+    <div id="about" style={{ padding: "3% 0px" }}>
       <Grid container spacing={2}>
         <Grid
           className="inspirationMain"
@@ -22,8 +22,17 @@ function Footer() {
           md={6}
           sm={12}
           xs={12}
+          style={{
+            textAlign: "center",
+            display: "flex",
+            justifyContent: "center",
+            alignContent: "center",
+            alignItems: "center",
+          }}
         >
-          <h4 className="sectionTitle">Copyright 2022 Forevernow Pty Ltd</h4>
+          <h4 style={{ margin: "0 auto" }} className="FooterTitle">
+            Copyright 2022 Forevernow Pty Ltd
+          </h4>
         </Grid>
         <Grid
           item
@@ -39,7 +48,7 @@ function Footer() {
             alignContent: "center",
             alignItems: "center",
           }}
-          className="grid footer"
+          className="grid footer "
         >
           <span>
             <FacebookIcon />{" "}

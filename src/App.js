@@ -31,15 +31,10 @@ function App() {
     <div className="App">
       <Layout>
         <Banner />
-        <hr />
         <Inspiration />
-        <hr />
         <Services />
-        <hr />
         <Innovation />
-        <hr />
         <Journey />
-        <hr />
         <About />
 
         <Footer />
