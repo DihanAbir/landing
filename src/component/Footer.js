@@ -51,22 +51,27 @@ function Footer() {
           }}
           className="grid footer "
         >
-          <Link></Link>
-          <span>
-            <FacebookIcon />
-          </span>
-          <Link></Link>
-          <span>
-            <InstagramIcon />
-          </span>
-          <Link></Link>
-          <span>
-            <TwitterIcon />
-          </span>
-          <Link></Link>
-          <span>
-            <LinkedInIcon />
-          </span>
+          <a href="https://www.facebook.com">
+            <span>
+              <FacebookIcon />
+            </span>
+          </a>
+          <a href="https://www.instragram.com">
+            <span>
+              <InstagramIcon />
+            </span>
+          </a>
+          <a href="https://www.twiter.com">
+            <span>
+              <TwitterIcon />
+            </span>
+          </a>
+
+          <a href="https://linked.com/">
+            <span>
+              <LinkedInIcon />
+            </span>
+          </a>
         </Grid>
       </Grid>
     </div>

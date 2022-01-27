@@ -310,22 +310,25 @@ img:hover {
 .footer {
   background-color: rgb(0, 0, 0);
 }
-.footer span {
-  margin: 0px 5%;
+
+.footer a {
+  color: rgb(255, 255, 255);
+  margin: 0px 2%;
 }
-.footer span:nth-child(1):hover {
+
+.footer a:nth-child(1):hover {
   color: rgb(39, 84, 207);
 }
 
-.footer span:nth-child(2):hover {
+.footer a:nth-child(2):hover {
   color: #5120d6;
 }
 
-.footer span:nth-child(3):hover {
+.footer a:nth-child(3):hover {
   color: rgb(106, 143, 243);
 }
 
-.footer span:nth-child(4):hover {
+.footer a:nth-child(4):hover {
   color: rgb(7, 45, 151);
 }
 .inspirationShape.bg-shape.shape-left {
