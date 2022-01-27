@@ -155,7 +155,7 @@ button.rec-carousel-item {
   background: rgba(255, 0, 0, 0);
   padding: 0px;
   object-fit: content;
-  background-color: red;
+  /* background-color: red; */
   /* width: 80% !important; */
 }
 #innovation img {
@@ -164,11 +164,22 @@ button.rec-carousel-item {
   background: rgba(255, 0, 0, 0);
   padding: 0px;
   object-fit: content;
-  background-color: red;
+  /* background-color: red; */
 }
+.ImageBottom.shape-left.InnovationRight {
+  transform: translate(-12%, -32%) rotate(0deg);
+}
+.ImageTop.Innovationleft.shape-left {
+  transform: translate(1%, 1%) rotate(360deg);
+}
+
 .service-main .sectionTitle {
   padding: 0px 15px;
   margin: 0;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 /* .shape-main img:hover {
@@ -317,13 +328,37 @@ button.rec-carousel-item {
 .footer span:nth-child(4):hover {
   color: rgb(7, 45, 151);
 }
+.inspirationShape.bg-shape.shape-left {
+  margin-right: -3%;
+}
 
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 1441px) {
+  .inspirationShape img {
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: 14px;
+  }
+  .Inspiration-main .shape-left {
+    align-self: center;
+    margin-right: -4%;
+    margin-top: 1%;
+  }
 
+  .bg-shape img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1440px) {
   .inspirationShape img {
     width: 200px !important;
     height: 200px !important;
+  }
+  .Inspiration-main .shape-left {
+    align-self: center;
+    margin-right: -4%;
+    margin-top: 1%;
   }
 
   .bg-shape img {

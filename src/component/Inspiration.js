@@ -66,7 +66,19 @@ function Inspiration() {
             </div>
           </div>
         </Grid>
-        <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
+        <Grid
+          item
+          xl={6}
+          ls={6}
+          md={6}
+          sm={12}
+          xs={12}
+          // style={{
+          //   display: "flex",
+          //   flexDirection: "column",
+          //   alignSelf: "center",
+          // }}
+        >
           <h1
             className="inspirationheader sectionTitle"
             style={{ textAlign: "left" }}

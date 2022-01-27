@@ -1,7 +1,7 @@
 import { Link } from "@mui/material";
 import React, { useEffect } from "react";
 // import logo from "../assets/logo.jpg";
-import logo from "../assets/Business Card-02.jpg";
+import logo from "../assets/logo1.png";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";

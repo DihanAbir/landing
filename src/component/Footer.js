@@ -5,6 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Link } from "@mui/material";
 
 function Footer() {
   const [details, setDetails] = React.useState(0);
@@ -50,17 +51,21 @@ function Footer() {
           }}
           className="grid footer "
         >
+          <Link></Link>
           <span>
-            <FacebookIcon />{" "}
+            <FacebookIcon />
           </span>
+          <Link></Link>
           <span>
-            <InstagramIcon />{" "}
+            <InstagramIcon />
           </span>
+          <Link></Link>
           <span>
-            <TwitterIcon />{" "}
+            <TwitterIcon />
           </span>
+          <Link></Link>
           <span>
-            <LinkedInIcon />{" "}
+            <LinkedInIcon />
           </span>
         </Grid>
       </Grid>

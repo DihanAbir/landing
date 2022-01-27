@@ -8,19 +8,19 @@ import Party from "../assets/Party.jpg";
 const images = [
   {
     url: space,
-    title: "Immortalishing moments2...",
+    title: "Immortalishing moments..",
   },
   {
     url: Party,
-    title: "Immortalishing moments2...",
+    title: "Immortalishing moments..",
   },
   {
     url: greet,
-    title: "Immortalishing moments3...",
+    title: "Immortalishing moments..",
   },
   {
     url: Party,
-    title: "Immortalishing moments4...",
+    title: "Immortalishing moments..",
   },
 ];
 
@@ -33,6 +33,7 @@ function Banner() {
     itemsToShow: 1,
     showArrows: false,
     enableAutoPlay: true,
+
     enableMouseSwipe: false,
     infinityLoop: true,
     autoPlaySpeed: 5000,

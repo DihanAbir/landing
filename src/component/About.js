@@ -29,6 +29,7 @@ function About() {
 
   return (
     <div id="about" className="common-mt">
+      <h1 className="sectionTitle">About</h1>
       <Grid container spacing={2}>
         <Grid
           className="inspirationMain"
@@ -39,7 +40,6 @@ function About() {
           sm={12}
           xs={12}
         >
-          <h1 className="sectionTitle">About</h1>
           <div className="shape-main">
             <div className="inspirationShape bg-shape shape-left">
               <img onMouseEnter={() => setDetails(0)} src={image1} />
@@ -51,8 +51,7 @@ function About() {
                 src={image2}
               />
               <br />
-              <br />
-              <br />
+
               <img
                 onMouseEnter={() => setDetails(2)}
                 // style={{ width: "300px", height: "300px" }}
