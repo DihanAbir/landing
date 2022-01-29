@@ -21,7 +21,7 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="logo">
-          <img style={{ height: "95px", width: "100%" }} src={logo} />
+          <img style={{ height: "95px" }} src={logo} />
         </div>
         <Link className="link">
           <BasicModal />

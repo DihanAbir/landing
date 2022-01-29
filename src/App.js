@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import introVideo from "./assets/Web-Intro.mp4";
 import videoModal from "./component/VideoModal";
 import Footer from "./component/Footer";
+import JourneySection from "./component/JourneySection";
 
 function App() {
   const [intro, setIntro] = useState(true);
@@ -35,6 +36,7 @@ function App() {
         <Services />
         <Innovation />
         <Journey />
+        {/* <JourneySection /> */}
         <About />
 
         <Footer />

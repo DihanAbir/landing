@@ -44,25 +44,44 @@ function Inspiration() {
           xs={12}
         >
           <div className="inspiration-padding Inspiration-main shape-main">
-            <div className="inspirationShape shape-left">
-              <img
+            <div
+              className="insr-main"
+              onClick={() => setDetails(0)}
+              style={{ background: details === 0 && "#02b382" }}
+            >
+              <div className=" inspirationShape1 insp-img-one shape-left">
+                {/* <img
                 onClick={() => setDetails(0)}
                 // style={{ width: "300px", height: "300px" }}
                 src={image1}
-              />
+              /> */}
+              </div>
             </div>
             <div className="inspirationShape shape-right">
-              <img
+              {/* <img
                 onClick={() => setDetails(1)}
                 // style={{ width: "300px", height: "300px" }}
                 src={image2}
-              />
-              <br />
-              <img
+              /> */}
+              <div
+                className="insr-main insr-mainleft"
+                onClick={() => setDetails(1)}
+                style={{ background: details === 1 && "#02b382" }}
+              >
+                <div className="inspirationShape1 insp-img-two"></div>
+              </div>
+              <div
+                className="insr-main insr-mainleft"
+                onClick={() => setDetails(2)}
+                style={{ background: details === 2 && "#02b382" }}
+              >
+                <div className="inspirationShape1 insp-img-three"></div>
+              </div>
+              {/* <img
                 onClick={() => setDetails(2)}
                 // style={{ width: "300px", height: "300px" }}
                 src={image3}
-              />
+              /> */}
             </div>
           </div>
         </Grid>

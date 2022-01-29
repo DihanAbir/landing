@@ -44,16 +44,17 @@ function Innovation() {
             <div className="ImageTop Innovationleft shape-left">
               <img
                 onClick={() => setDetails(0)}
-                style={{ width: "50%", height: "50%" }}
+                style={{ width: "50%", height: "51%", zIndex: "-100" }}
                 src={image1}
               />
             </div>
 
-            <div
-              onClick={() => setDetails(1)}
-              className="ImageBottom shape-left InnovationRight"
-            >
-              <img style={{ width: "50%", height: "50%" }} src={image2} />
+            <div className="ImageBottom shape-left InnovationRight">
+              <img
+                onClick={() => setDetails(1)}
+                style={{ width: "50%", height: "50%" }}
+                src={image2}
+              />
             </div>
           </div>
         </Grid>

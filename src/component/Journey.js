@@ -114,15 +114,31 @@ function Journey() {
                 style={{ boxSizing: "border-box" }}
                 className="shape-left InnovationRight Present"
               >
-                <img
+                {/* <img
+                  
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    position: "relative",
+                  }}
+                  src={imageS === image2021 ? image2021h : image2021}
+                  // src={image2021}
+                /> */}
+                <div
+                  style={{
+                    background: imageS === image2021 ? "#0048ba" : "#fff",
+                    color: imageS === image2021 ? "#fff" : "#0048ba",
+                  }}
                   onClick={() => {
                     setDetails(0);
                     setImageS(image2021);
                   }}
-                  style={{ width: "100%", height: "100%" }}
-                  src={imageS === image2021 ? image2021h : image2021}
-                  // src={image2021}
-                />
+                  className="shape1 b1"
+                >
+                  <div className="shape">
+                    <p>2021</p>
+                  </div>
+                </div>
               </div>
             </div>
           </Grid>
@@ -135,30 +151,56 @@ function Journey() {
                     className="shape-main"
                   >
                     <div className="shape-left InnovationRight InnovationRight1 InnovationRight1">
-                      <img
-                        onClick={() => {
-                          setDetails(2);
-                          setImageS(image2022q2);
-                        }}
+                      {/* <img
+                       
                         style={{ width: "50%", height: "50%" }}
                         src={image2022q2}
                         src={
                           imageS === image2022q2 ? image2022q2h : image2022q2
                         }
-                      />
+                      /> */}
+                      <div
+                        style={{
+                          background:
+                            imageS === image2022q2 ? "#0048ba" : "#fff",
+                          color: imageS === image2022q2 ? "#fff" : "#0048ba",
+                        }}
+                        onClick={() => {
+                          setDetails(2);
+                          setImageS(image2022q2);
+                        }}
+                        className="shape1 b2 b2Top"
+                      >
+                        <div className="shape">
+                          <p>2022q2</p>
+                        </div>
+                      </div>
                     </div>
                     <br />
                     <div className="Innovationleft Innovationleft1 shape-left">
-                      <img
-                        onClick={() => {
-                          setDetails(1);
-                          setImageS(image2022q1);
-                        }}
+                      {/* <img
+                        
                         style={{ width: "50%", height: "50%" }}
                         src={
                           imageS === image2022q1 ? image2022q1h : image2022q1
                         }
-                      />
+                      /> */}
+                      <div
+                        style={{
+                          background:
+                            imageS === image2022q1 ? "#0048ba" : "#fff",
+                          color: imageS === image2022q1 ? "#fff" : "#0048ba",
+                        }}
+                        onClick={() => {
+                          setDetails(1);
+                          setImageS(image2022q1);
+                        }}
+                        className="shape1 b2 b2Bottom"
+                      >
+                        <div className="shape">
+                          <p>2022q1</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </Grid>
@@ -168,32 +210,58 @@ function Journey() {
                     className="shape-main"
                   >
                     <div className="shape-left InnovationRight InnovationRight2 InnovationRight1">
-                      <img
-                        onClick={() => {
-                          setDetails(4);
-                          setImageS(image2022q4);
-                        }}
+                      {/* <img
+                       
                         style={{ width: "50%", height: "50%" }}
                         // src={image2022q3}
 
                         src={
                           imageS === image2022q4 ? image2022q4h : image2022q4
                         }
-                      />
+                      /> */}
+                      <div
+                        style={{
+                          background:
+                            imageS === image2022q4 ? "#0048ba" : "#fff",
+                          color: imageS === image2022q4 ? "#fff" : "#0048ba",
+                        }}
+                        onClick={() => {
+                          setDetails(4);
+                          setImageS(image2022q4);
+                        }}
+                        className="shape1 b2 b2Top1"
+                      >
+                        <div className="shape">
+                          <p>2022q3</p>
+                        </div>
+                      </div>
                     </div>
                     <br />
                     <div className="Innovationleft Innovationleft2 shape-left">
-                      <img
-                        onClick={() => {
-                          setDetails(3);
-                          setImageS(image2022q3);
-                        }}
+                      {/* <img
+                       
                         style={{ width: "50%", height: "50%" }}
                         // src={image2022q4}
                         src={
                           imageS === image2022q3 ? image2022q3h : image2022q3
                         }
-                      />
+                      /> */}
+                      <div
+                        style={{
+                          background:
+                            imageS === image2022q3 ? "#0048ba" : "#fff",
+                          color: imageS === image2022q3 ? "#fff" : "#0048ba",
+                        }}
+                        onClick={() => {
+                          setDetails(3);
+                          setImageS(image2022q3);
+                        }}
+                        className="shape1 b2 b2Bottom1"
+                      >
+                        <div className="shape">
+                          <p>2022q4</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </Grid>
@@ -203,20 +271,32 @@ function Journey() {
           <Grid item xs={4}>
             <div style={{ display: "inline" }} className="shape-main">
               <div className="Innovationleft shape-left">
-                <img
+                {/* <img
                   style={{ width: "50%", height: "50%" }}
+                  
+                  // src={image2023}
+
+                  src={imageS === image2023 ? image2023h : image2023}
+                /> */}
+                <div
+                  style={{
+                    background: imageS === image2023 ? "#0048ba" : "#fff",
+                    color: imageS === image2023 ? "#fff" : "#0048ba",
+                  }}
                   onClick={() => {
                     setDetails(5);
                     setImageS(image2023);
                   }}
-                  // src={image2023}
-
-                  src={imageS === image2023 ? image2023h : image2023}
-                />
+                  className="shape1 b3"
+                >
+                  <div className="shape">
+                    <p>2023</p>
+                  </div>
+                </div>
               </div>
               <br />
               <div className="shape-left InnovationRight">
-                <img
+                {/* <img
                   onClick={() => {
                     setDetails(6);
                     setImageS(image2024);
@@ -225,7 +305,22 @@ function Journey() {
                   // src={image2024}
 
                   src={imageS === image2024 ? image2024h : image2024}
-                />
+                /> */}{" "}
+                <div
+                  style={{
+                    background: imageS === image2024 ? "#0048ba" : "#fff",
+                    color: imageS === image2024 ? "#fff" : "#0048ba",
+                  }}
+                  onClick={() => {
+                    setDetails(6);
+                    setImageS(image2024);
+                  }}
+                  className="shape1 b3"
+                >
+                  <div className="shape">
+                    <p>2024</p>
+                  </div>
+                </div>
               </div>
             </div>
           </Grid>
