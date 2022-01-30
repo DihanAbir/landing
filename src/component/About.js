@@ -40,11 +40,11 @@ function About() {
           sm={12}
           xs={12}
         >
-          <div className="shape-main">
+          <div className="shape-main about-shape-main">
             <div className="inspirationShape bg-shape shape-left">
               <img onMouseEnter={() => setDetails(0)} src={image1} />
             </div>
-            <div className="inspirationShape shape-right">
+            <div className="inspirationShape aboutShape shape-right">
               <img
                 onMouseEnter={() => setDetails(1)}
                 // style={{ width: "300px", height: "300px" }}

@@ -389,9 +389,17 @@ img:hover {
   background: url(./assets/GreetCard1.jpg) no-repeat;
   margin-top: 0px !important;
 }
+.aboutShape {
+  margin-top: -5% !important;
+  margin-left: -4% !important;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 1441px) {
+  .aboutShape {
+    margin-top: -1% !important;
+    margin-left: -2% !important;
+  }
   .inspirationShape img {
     width: 280px !important;
     height: 230px !important;
@@ -490,6 +498,12 @@ img:hover {
   .bg-shape img {
     width: 300px !important;
     height: 300px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-shape-main {
+    margin-left: 24%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
