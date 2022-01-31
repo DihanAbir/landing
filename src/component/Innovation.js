@@ -39,14 +39,14 @@ function Innovation() {
         <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="">
           <InnovationDetails details={details} />
         </Grid>
-        <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
-          <div style={{ display: "inline" }} className="shape-main">
-            <div className="ImageTop Innovationleft shape-left">
-              <img
-                onClick={() => setDetails(0)}
-                style={{ width: "50%", height: "51%", zIndex: "-100" }}
-                src={image1}
-              />
+        <Grid className="inov-grid" item xl={6} ls={6} md={6} sm={12} xs={12}>
+          {/* <div style={{ display: "inline" }} className="shape-main">
+            <div
+              onClick={() => setDetails(0)}
+              style={{ zIndex: "2!important" }}
+              className="ImageTop Innovationleft shape-left"
+            >
+              <img style={{ width: "50%", height: "51%" }} src={image1} />
             </div>
 
             <div className="ImageBottom shape-left InnovationRight">
@@ -55,6 +55,48 @@ function Innovation() {
                 style={{ width: "50%", height: "50%" }}
                 src={image2}
               />
+            </div>
+          </div> */}
+          <div className="shape-main about-shape-main">
+            <div className="inspiration-padding innovation-main Inspiration-main shape-main">
+              <div
+                className="insr-main inov-inst"
+                // onClick={() => setDetails(0)}
+                onMouseEnter={() => setDetails(0)}
+                style={{
+                  background: details === 0 && "#02b382",
+                  display: "flex",
+                }}
+              >
+                <div className=" inspirationShape1 about-img-one innvOne shape-left">
+                  {/* <img
+                onClick={() => setDetails(0)}
+                // style={{ width: "300px", height: "300px" }}
+                src={image1}
+              /> */}
+                </div>
+              </div>
+              <div className="innova-D-image about-D-image inspirationShape shape-right">
+                {/* <img
+                onClick={() => setDetails(1)}
+                // style={{ width: "300px", height: "300px" }}
+                src={image2}
+              /> */}
+                <div
+                  className=" insr-main insr-mainleft innobB"
+                  // onClick={() => setDetails(1)}
+                  onMouseEnter={() => setDetails(1)}
+                  style={{ background: details === 1 && "#02b382" }}
+                >
+                  <div className="inspirationShape1 about-img-two innvTwo"></div>
+                </div>
+
+                {/* <img
+                onClick={() => setDetails(2)}
+                // style={{ width: "300px", height: "300px" }}
+                src={image3}
+              /> */}
+              </div>
             </div>
           </div>
         </Grid>

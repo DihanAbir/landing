@@ -101,7 +101,7 @@ function Journey() {
         textAlign: "center",
       }}
     >
-      <h1 className="sectionTitle">Our Journey</h1>
+      <h1 className="sectionTitle journetTitle">Our Journey</h1>
       <div className="journeyShape">
         <Grid container spacing={2}>
           {/* xl={2} ls={6} md={6} sm={12} xs={12} */}
@@ -232,7 +232,7 @@ function Journey() {
                         className="shape1 b2 b2Top1"
                       >
                         <div className="shape">
-                          <p>2022q3</p>
+                          <p>2022q4</p>
                         </div>
                       </div>
                     </div>
@@ -259,7 +259,7 @@ function Journey() {
                         className="shape1 b2 b2Bottom1"
                       >
                         <div className="shape">
-                          <p>2022q4</p>
+                          <p>2022q3</p>
                         </div>
                       </div>
                     </div>
@@ -337,7 +337,9 @@ function AddressDetails({ details }) {
     <div style={{ marginTop: "5%" }} className="option details">
       <h2>{title}</h2>
       {options.map((option, index) => (
-        <p key={index}>{option}</p>
+        <p className="jourP" key={index}>
+          {option}
+        </p>
       ))}
       <br />
     </div>

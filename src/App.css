@@ -141,6 +141,9 @@ button.rec-carousel-item {
   display: flex;
   /* margin-left: 30%; */
 }
+.journetTitle {
+  margin-left: 1px !important;
+}
 .shape-main img {
   /* clip-path: polygon(22% 0, 77% 0, 100% 45%, 77% 100%, 23% 100%, 0 52%); */
   clip-path: polygon(22% 0, 77% 0, 100% 45%, 77% 100%, 23% 100%, 0 52%);
@@ -169,10 +172,12 @@ button.rec-carousel-item {
   /* background-color: red; */
 }
 .ImageBottom.shape-left.InnovationRight {
-  transform: translate(-12%, -32%) rotate(0deg);
+  /* transform: translate(-12%, -32%) rotate(0deg); */
+  /* margin-left: -6%; */
 }
 .ImageTop.Innovationleft.shape-left {
-  transform: translate(1%, 1%) rotate(360deg);
+  /* transform: translate(1%, 1%) rotate(360deg); */
+  transform: translate(11%, 35%) rotate(360deg);
 }
 
 .service-main .sectionTitle {
@@ -182,6 +187,25 @@ button.rec-carousel-item {
 
 img:hover {
   cursor: pointer;
+}
+
+.about-img-two {
+  background: url(./assets/aboutUpor.jpeg) no-repeat;
+  margin-top: 0px !important;
+  background-position: center;
+  background-size: cover;
+}
+.innvTwo {
+  background: url(./assets/innvUpor.jpeg) no-repeat;
+  margin-top: 0px !important;
+  background-position: center;
+  background-size: cover;
+}
+.innvOne {
+  background: url(./assets/innvNich.jpeg) no-repeat;
+  margin-top: 0px !important;
+  background-position: center;
+  background-size: cover;
 }
 
 /* .shape-main img:hover {
@@ -227,12 +251,15 @@ img:hover {
 }
 .b1 {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .b2 {
   transform: scale(0.75);
+  cursor: pointer;
 }
 .b3 {
   transform: scale(1.2);
+  cursor: pointer;
 }
 .shape1.b2.b2Bottom {
   margin-top: -20%;
@@ -288,7 +315,7 @@ img:hover {
 .InnovationRight {
   display: flex;
   justify-content: flex-end;
-  margin-top: -5%;
+  margin-top: -4%;
 }
 .shape-left.InnovationRight.Present {
   margin-top: 50%;
@@ -375,31 +402,117 @@ img:hover {
 }
 
 .insp-img-one {
-  background: url(./assets/VintagePhotos.jpg) no-repeat;
+  background: url(./assets/VintagePhotos.jpg) no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
 
 .insp-img-two {
-  background: url(./assets/Scrollimage3.jpg) no-repeat;
+  background: url(./assets/inspUpor.jpeg) no-repeat !important;
   margin-top: 0px !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.insp-img-three {
+  background: url(./assets/inspNic.jpeg) no-repeat !important;
+  margin-top: 0px !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
 .insr-mainleft {
   padding: 5% !important;
-}
-.insp-img-three {
-  background: url(./assets/GreetCard1.jpg) no-repeat;
-  margin-top: 0px !important;
 }
 .aboutShape {
   margin-top: -5% !important;
   margin-left: -4% !important;
 }
 
+.about-img-one {
+  background: url(./assets/aboutB.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 5px;
+}
+
+.about-img-two {
+  background: url(./assets/aboutUpor.jpeg) no-repeat;
+  margin-top: 0px !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img-three {
+  background: url(./assets/aboutNich.jpeg) no-repeat;
+  margin-top: 0px !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.big-aboutB,
+.insr-main,
+.insr-mainleft {
+  cursor: pointer;
+}
+.serviceP {
+  padding-top: 10%;
+}
+
+.services img {
+  clip-path: polygon(25% 0%, 75% 0%, 86% 50%, 75% 100%, 25% 100%, 11% 50%);
+}
+
+.innobB {
+  margin-top: -15%;
+}
+
+.innova-D-image {
+  margin-top: 22%;
+}
+.inov-inst {
+  margin-top: -32%;
+}
+
+/* img.aboutShapeImage2 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 6% 50%);
+}
+img.aboutShapeImage3 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 4% 50%);
+} */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 1441px) {
+  /* img.aboutShapeImage3 {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 4% 50%);
+    margin-left: 3% !important;
+  } */
+
+  .about-img-one {
+    background: url(./assets/aboutB.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+  }
+  .navbar .lg-menu {
+    margin-right: 36%;
+  }
+
+  .about-img-two {
+    background: url(./assets/aboutUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-img-three {
+    background: url(./assets/aboutNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
   .aboutShape {
     margin-top: -1% !important;
-    margin-left: -2% !important;
+    margin-left: -6% !important;
   }
+
   .inspirationShape img {
     width: 280px !important;
     height: 230px !important;
@@ -421,12 +534,46 @@ img:hover {
     margin-top: 14px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   }
+  .big-about {
+    height: 314px !important;
+    width: 319px !important;
+    clip-path: polygon(25% 0%, 72% 0%, 100% 50%, 72% 100%, 25% 100%, 0% 50%);
+  }
   .inspirationShape1 {
     width: 280px !important;
     height: 230px !important;
     margin-top: 14px;
 
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    /* background-size: cover; */
+  }
+  .big-aboutB {
+    height: 314px !important;
+    width: 319px !important;
+    clip-path: polygon(25% 0%, 72% 0%, 100% 50%, 72% 100%, 25% 100%, 0% 50%);
+  }
+  .about-D-image {
+    margin-left: -12%;
+  }
+  .insp-img-one {
+    /* background: url(./assets/VintagePhotos.jpg) no-repeat; */
+    background-position: center;
+    background-size: cover;
+  }
+
+  .insp-img-two {
+    /* background: url(./assets/Scrollimage3.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .insr-mainleft {
+    padding: 5% !important;
+  }
+  .insp-img-three {
+    /* background: url(./assets/GreetCard1.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
     background-size: cover;
   }
   .Inspiration-main .shape-left {
@@ -434,13 +581,42 @@ img:hover {
     margin-right: -4%;
     margin-top: 1%;
   }
+  .big-about {
+    height: 300px;
+  }
 
   .bg-shape img {
     width: 300px !important;
     height: 300px !important;
+    margin-top: 5%;
+    clip-path: polygon(24% 0%, 68% 0%, 99% 50%, 69% 100%, 24% 100%, 0% 50%);
+  }
+  .inspirationShape.bg-shape.shape-left {
+    margin-right: 0%;
+  }
+  .innova-D-image {
+    margin-top: 24%;
+  }
+  .inov-inst {
+    margin-top: -18%;
+  }
+  .innvTwo {
+    background: url(./assets/innvUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .innvOne {
+    background: url(./assets/innvNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
+  .navbar .lg-menu {
+    margin-right: 26%;
+  }
   .shape1 {
     height: 160px;
     width: 200px;
@@ -481,12 +657,76 @@ img:hover {
     margin-top: 14px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   }
+  .big-about {
+    height: 314px !important;
+    width: 319px !important;
+    clip-path: polygon(25% 0%, 72% 0%, 100% 50%, 72% 100%, 25% 100%, 0% 50%);
+  }
   .inspirationShape1 {
     width: 260px !important;
     height: 230px !important;
     margin-top: 14px;
     background: url(./assets/VintagePhotos.jpg) no-repeat;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-size: cover;
+  }
+  .innova-D-image {
+    margin-top: 22%;
+  }
+  .inov-inst {
+    margin-top: -32%;
+  }
+  .innovation-main {
+    margin-left: -5%;
+  }
+
+  .about-img-one {
+    background: url(./assets/aboutB.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+  }
+
+  .about-img-two {
+    background: url(./assets/aboutUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-img-three {
+    background: url(./assets/aboutNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .big-aboutB {
+    height: 314px !important;
+    width: 319px !important;
+    clip-path: polygon(25% 0%, 72% 0%, 100% 50%, 72% 100%, 25% 100%, 0% 50%);
+  }
+  .about-D-image {
+    margin-left: -12%;
+  }
+  .insp-img-one {
+    /* background: url(./assets/VintagePhotos.jpg) no-repeat; */
+    background-position: center;
+    background-size: cover;
+  }
+
+  .insp-img-two {
+    /* background: url(./assets/Scrollimage3.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .insr-mainleft {
+    padding: 5% !important;
+  }
+  .insp-img-three {
+    /* background: url(./assets/GreetCard1.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
     background-size: cover;
   }
   .Inspiration-main .shape-left {
@@ -498,12 +738,26 @@ img:hover {
   .bg-shape img {
     width: 300px !important;
     height: 300px !important;
+    margin-top: -5%;
+    clip-path: polygon(24% 0%, 70% 0%, 99% 50%, 69% 100%, 24% 100%, 0% 50%);
+  }
+  .innvTwo {
+    background: url(./assets/innvUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .innvOne {
+    background: url(./assets/innvNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .about-shape-main {
-    margin-left: 24%;
+    /* margin-left: 24%; */
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -511,6 +765,7 @@ img:hover {
     width: 200px !important;
     height: 200px !important;
   }
+
   .shape1 {
     height: 120px;
     width: 200px;
@@ -552,12 +807,90 @@ img:hover {
     margin-top: 14px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   }
+  .big-about {
+    height: 250px !important;
+    width: 300px !important;
+    clip-path: polygon(25% 0%, 72% -6%, 96% 50%, 72% 103%, 25% 100%, 0% 50%);
+  }
+
   .inspirationShape1 {
     width: 200px !important;
     height: 200px !important;
     margin-top: 14px;
     background: url(./assets/VintagePhotos.jpg) no-repeat;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-size: cover;
+  }
+
+  .about-img-one {
+    background: url(./assets/aboutB.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+  }
+
+  .about-img-two {
+    background: url(./assets/aboutUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-img-three {
+    background: url(./assets/aboutNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-img-one {
+    background: url(./assets/aboutB.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+  }
+
+  .about-img-two {
+    background: url(./assets/aboutUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-img-three {
+    background: url(./assets/aboutNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .big-aboutB {
+    height: 250px !important;
+    width: 300px !important;
+    clip-path: polygon(25% 0%, 75% 0%, 95% 48%, 73% 98%, 27% 98%, 2% 48%);
+  }
+  .about-D-image {
+    margin-left: -12%;
+  }
+  .insp-img-one {
+    /* background: url(./assets/VintagePhotos.jpg) no-repeat; */
+    background-position: center;
+    background-size: cover;
+  }
+
+  .insp-img-two {
+    /* background: url(./assets/Scrollimage3.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .insr-mainleft {
+    padding: 5% !important;
+  }
+  .insp-img-three {
+    /* background: url(./assets/GreetCard1.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
     background-size: cover;
   }
   .inspirationMain {
@@ -569,6 +902,16 @@ img:hover {
   .bg-shape img {
     width: 250px !important;
     height: 250px !important;
+    margin-top: -5%;
+    -webkit-clip-path: polygon(
+      24% 0%,
+      73% 0%,
+      99% 50%,
+      69% 100%,
+      24% 100%,
+      0% 50%
+    );
+    clip-path: polygon(24% 0%, 73% 0%, 99% 50%, 72% 100%, 24% 100%, 0% 50%);
   }
   span.skip {
     right: 23px;
@@ -580,6 +923,37 @@ img:hover {
     text-align: center;
     /* background-color: rgb(148, 24, 24); */
     margin: 0 auto 5%;
+  }
+
+  .ImageBottom.shape-left.InnovationRight {
+    /* transform: translate(-12%, -32%) rotate(0deg); */
+    margin-left: -15%;
+  }
+  .ImageTop.Innovationleft.shape-left {
+    /* transform: translate(1%, 1%) rotate(360deg); */
+    transform: translate(5%, 35%) rotate(360deg);
+  }
+  .innova-D-image {
+    margin-top: 28%;
+  }
+  .inov-inst {
+    margin-top: -32%;
+  }
+  .inov-grid {
+    display: flex;
+    justify-content: center;
+  }
+  .innvTwo {
+    background: url(./assets/innvUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .innvOne {
+    background: url(./assets/innvNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -643,6 +1017,12 @@ img:hover {
     margin-top: 14px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   }
+  .big-about {
+    height: 250px !important;
+    width: 300px !important;
+    clip-path: polygon(25% 0%, 72% -6%, 96% 50%, 72% 103%, 25% 100%, 2% 50%);
+  }
+
   .inspirationShape1 {
     width: 200px !important;
     height: 200px !important;
@@ -651,9 +1031,72 @@ img:hover {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-size: cover;
   }
+
+  .about-img-one {
+    background: url(./assets/aboutB.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+  }
+
+  .about-img-two {
+    background: url(./assets/aboutUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-img-three {
+    background: url(./assets/aboutNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .big-aboutB {
+    height: 250px !important;
+    width: 300px !important;
+    clip-path: polygon(25% 0%, 75% 0%, 95% 48%, 73% 98%, 27% 98%, 4% 48%);
+  }
+  .about-D-image {
+    margin-left: -12%;
+  }
+
+  .insp-img-one {
+    /* background: url(./assets/VintagePhotos.jpg) no-repeat; */
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+  }
+
+  .insp-img-two {
+    /* background: url(./assets/Scrollimage3.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .insr-mainleft {
+    padding: 5% !important;
+  }
+  .insp-img-three {
+    /* background: url(./assets/GreetCard1.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
   .bg-shape img {
     width: 220px !important;
     height: 220px !important;
+    margin-top: -5%;
+    -webkit-clip-path: polygon(
+      24% 0%,
+      73% 0%,
+      99% 50%,
+      69% 100%,
+      24% 100%,
+      0% 50%
+    );
+    clip-path: polygon(24% 0%, 73% 0%, 99% 50%, 73% 100%, 24% 100%, 0% 50%);
   }
   .sectionTitle {
     font-size: 35px !important;
@@ -667,6 +1110,36 @@ img:hover {
   }
   .sectionTitle {
     font-size: 35px !important;
+  }
+  .ImageBottom.shape-left.InnovationRight {
+    /* transform: translate(-12%, -32%) rotate(0deg); */
+    margin-left: -13%;
+  }
+  .ImageTop.Innovationleft.shape-left {
+    /* transform: translate(1%, 1%) rotate(360deg); */
+    transform: translate(5%, 35%) rotate(360deg);
+  }
+  .innova-D-image {
+    margin-top: 28%;
+  }
+  .inov-inst {
+    margin-top: -32%;
+  }
+  .inov-grid {
+    display: flex;
+    justify-content: center;
+  }
+  .innvTwo {
+    background: url(./assets/innvUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .innvOne {
+    background: url(./assets/innvNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media (max-width: 575.98px) {
@@ -722,12 +1195,70 @@ img:hover {
     margin-top: 14px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   }
+  .big-about {
+    height: 200px !important;
+    width: 280px !important;
+    clip-path: polygon(25% 0%, 75% -6%, 96% 50%, 77% 103%, 25% 100%, 6% 50%);
+  }
+
   .inspirationShape1 {
     width: 150px !important;
     height: 150px !important;
     margin-top: 14px;
     background: url(./assets/VintagePhotos.jpg) no-repeat;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-size: cover;
+  }
+
+  .about-img-one {
+    background: url(./assets/aboutB.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+  }
+
+  .about-img-two {
+    background: url(./assets/aboutUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-img-three {
+    background: url(./assets/aboutNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .big-aboutB {
+    height: 200px !important;
+    width: 280px !important;
+    clip-path: polygon(25% 0%, 77% 0%, 95% 48%, 76% 98%, 27% 98%, 8% 48%);
+  }
+  .about-D-image {
+    margin-left: -12%;
+  }
+  .insp-img-one {
+    /* background: url(./assets/VintagePhotos.jpg) no-repeat; */
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+  }
+
+  .insp-img-two {
+    /* background: url(./assets/Scrollimage3.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .insr-mainleft {
+    padding: 5% !important;
+  }
+  .insp-img-three {
+    /* background: url(./assets/GreetCard1.jpg) no-repeat; */
+    margin-top: 0px !important;
+    background-position: center;
     background-size: cover;
   }
   .inspirationMain {
@@ -745,6 +1276,46 @@ img:hover {
   .bg-shape img {
     width: 220px !important;
     height: 220px !important;
+    margin-top: -4%;
+    -webkit-clip-path: polygon(
+      24% 0%,
+      73% 0%,
+      99% 50%,
+      69% 100%,
+      24% 100%,
+      0% 50%
+    );
+    clip-path: polygon(24% 0%, 73% 0%, 99% 50%, 72% 100%, 24% 100%, 0% 50%);
+  }
+  .ImageBottom.shape-left.InnovationRight {
+    /* transform: translate(-12%, -32%) rotate(0deg); */
+    margin-left: -13%;
+  }
+  .ImageTop.Innovationleft.shape-left {
+    /* transform: translate(1%, 1%) rotate(360deg); */
+    transform: translate(5%, 35%) rotate(360deg);
+  }
+  .innova-D-image {
+    margin-top: 28%;
+  }
+  .inov-inst {
+    margin-top: -32%;
+  }
+  .inov-grid {
+    display: flex;
+    justify-content: center;
+  }
+  .innvTwo {
+    background: url(./assets/innvUpor.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  .innvOne {
+    background: url(./assets/innvNich.jpeg) no-repeat;
+    margin-top: 0px !important;
+    background-position: center;
+    background-size: cover;
   }
 }
 

@@ -1,21 +1,28 @@
 import React, { useRef } from "react";
 import Carousel from "react-elastic-carousel";
 
-import space from "../assets/Space1.jpg";
-import greet from "../assets/GreetCard1.jpg";
-import Party from "../assets/Party.jpg";
+import space from "../assets/Banner 1.jpg";
+import B1 from "../assets/Banner 2.png";
+import Party from "../assets/Banner 3.png";
+import Party2 from "../assets/Banner 4.jpg";
+import Comb from "../assets/Banner 5.png";
 
 const images = [
+  {
+    url: B1,
+    title: "Immortalishing moments..",
+  },
   {
     url: space,
     title: "Immortalishing moments..",
   },
   {
-    url: Party,
+    url: Party2,
     title: "Immortalishing moments..",
   },
+
   {
-    url: greet,
+    url: Comb,
     title: "Immortalishing moments..",
   },
   {

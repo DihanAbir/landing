@@ -41,22 +41,52 @@ function About() {
           xs={12}
         >
           <div className="shape-main about-shape-main">
-            <div className="inspirationShape bg-shape shape-left">
-              <img onMouseEnter={() => setDetails(0)} src={image1} />
-            </div>
-            <div className="inspirationShape aboutShape shape-right">
-              <img
-                onMouseEnter={() => setDetails(1)}
+            <div className="inspiration-padding Inspiration-main shape-main">
+              <div
+                className="insr-main big-about"
+                // onClick={() => setDetails(0)}
+                onMouseEnter={() => setDetails(0)}
+                style={{
+                  background: details === 0 && "#02b382",
+                  display: "flex",
+                }}
+              >
+                <div className="big-aboutB inspirationShape1 about-img-one shape-left">
+                  {/* <img
+                onClick={() => setDetails(0)}
+                // style={{ width: "300px", height: "300px" }}
+                src={image1}
+              /> */}
+                </div>
+              </div>
+              <div className="about-D-image inspirationShape shape-right">
+                {/* <img
+                onClick={() => setDetails(1)}
                 // style={{ width: "300px", height: "300px" }}
                 src={image2}
-              />
-              <br />
-
-              <img
-                onMouseEnter={() => setDetails(2)}
+              /> */}
+                <div
+                  className="insr-main insr-mainleft"
+                  // onClick={() => setDetails(1)}
+                  onMouseEnter={() => setDetails(1)}
+                  style={{ background: details === 1 && "#02b382" }}
+                >
+                  <div className="inspirationShape1 about-img-two"></div>
+                </div>
+                <div
+                  className="insr-main insr-mainleft"
+                  // onClick={() => setDetails(2)}
+                  onMouseEnter={() => setDetails(2)}
+                  style={{ background: details === 2 && "#02b382" }}
+                >
+                  <div className="inspirationShape1 about-img-three"></div>
+                </div>
+                {/* <img
+                onClick={() => setDetails(2)}
                 // style={{ width: "300px", height: "300px" }}
                 src={image3}
-              />
+              /> */}
+              </div>
             </div>
           </div>
         </Grid>

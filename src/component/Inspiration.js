@@ -46,8 +46,12 @@ function Inspiration() {
           <div className="inspiration-padding Inspiration-main shape-main">
             <div
               className="insr-main"
-              onClick={() => setDetails(0)}
-              style={{ background: details === 0 && "#02b382" }}
+              // onClick={() => setDetails(0)}
+              onMouseEnter={() => setDetails(0)}
+              style={{
+                background: details === 0 && "#02b382",
+                display: "flex",
+              }}
             >
               <div className=" inspirationShape1 insp-img-one shape-left">
                 {/* <img
@@ -65,14 +69,16 @@ function Inspiration() {
               /> */}
               <div
                 className="insr-main insr-mainleft"
-                onClick={() => setDetails(1)}
+                // onClick={() => setDetails(1)}
+                onMouseEnter={() => setDetails(1)}
                 style={{ background: details === 1 && "#02b382" }}
               >
                 <div className="inspirationShape1 insp-img-two"></div>
               </div>
               <div
                 className="insr-main insr-mainleft"
-                onClick={() => setDetails(2)}
+                // onClick={() => setDetails(2)}
+                onMouseEnter={() => setDetails(2)}
                 style={{ background: details === 2 && "#02b382" }}
               >
                 <div className="inspirationShape1 insp-img-three"></div>

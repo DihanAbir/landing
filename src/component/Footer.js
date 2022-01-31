@@ -13,7 +13,7 @@ function Footer() {
   console.log("details", details);
 
   return (
-    <div id="about" style={{ padding: "3% 0px" }}>
+    <div id="about" style={{ padding: "3% 20% " }}>
       <Grid container spacing={2}>
         <Grid
           className="inspirationMain"
@@ -51,16 +51,6 @@ function Footer() {
           }}
           className="grid footer "
         >
-          <a href="https://www.facebook.com">
-            <span>
-              <FacebookIcon />
-            </span>
-          </a>
-          <a href="https://www.instragram.com">
-            <span>
-              <InstagramIcon />
-            </span>
-          </a>
           <a href="https://www.twiter.com">
             <span>
               <TwitterIcon />
@@ -70,6 +60,11 @@ function Footer() {
           <a href="https://linked.com/">
             <span>
               <LinkedInIcon />
+            </span>
+          </a>
+          <a href="https://www.facebook.com">
+            <span>
+              <FacebookIcon />
             </span>
           </a>
         </Grid>

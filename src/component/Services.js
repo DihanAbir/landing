@@ -14,8 +14,11 @@ function Services() {
     <div id="services" className="common-mt">
       <Grid container spacing={2}>
         <Grid item xl={6} ls={6} md={6} sm={12} xs={12}>
-          <h1 className="sectionTitle">Our Service</h1>
-          <ServicesDetails details={details} />
+          <div className="serviceP">
+            <h1 className="sectionTitle">Our Service</h1>
+
+            <ServicesDetails details={details} />
+          </div>
         </Grid>
         <Grid item xl={6} ls={6} md={6} sm={12} xs={12} className="grid">
           <div className="shape-main">
@@ -32,7 +35,7 @@ function Services() {
 function ServicesDetails({ details }) {
   const { title, options } = details;
   return (
-    <div className="grid option service-main">
+    <div className=" grid option service-main">
       {options.map((option, index) => (
         <p key={index}>{option}</p>
       ))}
