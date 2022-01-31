@@ -24,6 +24,7 @@ const aboutData = [
 
 function About() {
   const [details, setDetails] = React.useState(0);
+  const [Tg, setTg] = React.useState(false);
 
   console.log("details", details);
 
@@ -45,9 +46,13 @@ function About() {
               <div
                 className="insr-main big-about"
                 // onClick={() => setDetails(0)}
-                onMouseEnter={() => setDetails(0)}
+                onMouseEnter={() => {
+                  setDetails(0);
+                  setTg(true);
+                }}
+                onMouseLeave={() => setTg(false)}
                 style={{
-                  background: details === 0 && "#02b382",
+                  background: Tg && details === 0 ? "#02b382" : "#fff0",
                   display: "flex",
                 }}
               >
@@ -68,16 +73,30 @@ function About() {
                 <div
                   className="insr-main insr-mainleft"
                   // onClick={() => setDetails(1)}
-                  onMouseEnter={() => setDetails(1)}
-                  style={{ background: details === 1 && "#02b382" }}
+                  onMouseEnter={() => {
+                    setDetails(1);
+                    setTg(true);
+                  }}
+                  onMouseLeave={() => setTg(false)}
+                  style={{
+                    background: Tg && details === 1 ? "#02b382" : "#fff0",
+                    display: "flex",
+                  }}
                 >
                   <div className="inspirationShape1 about-img-two"></div>
                 </div>
                 <div
                   className="insr-main insr-mainleft"
                   // onClick={() => setDetails(2)}
-                  onMouseEnter={() => setDetails(2)}
-                  style={{ background: details === 2 && "#02b382" }}
+                  onMouseEnter={() => {
+                    setDetails(2);
+                    setTg(true);
+                  }}
+                  onMouseLeave={() => setTg(false)}
+                  style={{
+                    background: Tg && details === 2 ? "#02b382" : "#fff0",
+                    display: "flex",
+                  }}
                 >
                   <div className="inspirationShape1 about-img-three"></div>
                 </div>

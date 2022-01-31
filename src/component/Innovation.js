@@ -31,6 +31,7 @@ const inspirationData = [
 ];
 function Innovation() {
   const [details, setDetails] = React.useState(0);
+  const [Tg, setTg] = React.useState(false);
 
   console.log("details", details);
   return (
@@ -62,9 +63,13 @@ function Innovation() {
               <div
                 className="insr-main inov-inst"
                 // onClick={() => setDetails(0)}
-                onMouseEnter={() => setDetails(0)}
+                onMouseEnter={() => {
+                  setDetails(0);
+                  setTg(true);
+                }}
+                onMouseLeave={() => setTg(false)}
                 style={{
-                  background: details === 0 && "#02b382",
+                  background: Tg && details === 0 ? "#02b382" : "#fff0",
                   display: "flex",
                 }}
               >
@@ -85,8 +90,15 @@ function Innovation() {
                 <div
                   className=" insr-main insr-mainleft innobB"
                   // onClick={() => setDetails(1)}
-                  onMouseEnter={() => setDetails(1)}
-                  style={{ background: details === 1 && "#02b382" }}
+                  onMouseEnter={() => {
+                    setDetails(1);
+                    setTg(true);
+                  }}
+                  onMouseLeave={() => setTg(false)}
+                  style={{
+                    background: Tg && details === 1 ? "#02b382" : "#fff0",
+                    display: "flex",
+                  }}
                 >
                   <div className="inspirationShape1 about-img-two innvTwo"></div>
                 </div>
